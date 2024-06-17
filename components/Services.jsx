@@ -6,7 +6,10 @@ import Link from "next/link";
 
 function Services() {
   return (
-    <section className="flex items-center relative justify-center flex-col mt-[5rem]">
+    <section
+      id="services"
+      className="flex items-center relative justify-center flex-col mt-[5rem]"
+    >
       <div class="backgrounds z-0 absolute top-[5rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
       <h1 className="text-[5rem] font-black header">Services</h1>
       <div className="flex items-center justify-center flex-col">
