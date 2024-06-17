@@ -1,18 +1,18 @@
 export const navLinks = [
   {
-    id: "About Us",
+    id: "aboutUs",
     title: "About Us",
   },
   {
-    id: "Projects",
+    id: "projects",
     title: "Projects",
   },
   {
-    id: "Services",
+    id: "services",
     title: "Services",
   },
   {
-    id: "Contacts",
+    id: "contacts",
     title: "Contacts",
   },
 ];
@@ -132,7 +132,8 @@ export const founders = [
   {
     name: "Jed Edison",
     title: "CEO & Co-founder",
-    description: "Fullstack devekoper",
+    description:
+      "I am a versatile fullstack software developer with a keen eye for detail, specializing in creating comprehensive and scalable solutions. I excel in testing, crafting intuitive mockups for designs, and developing engaging animations, ensuring each project not only functions flawlessly but also provides an exceptional user experience.",
     img: "/jed.jpg",
     link: "https://jed-donaire.vercel.app/",
   },
