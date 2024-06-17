@@ -73,6 +73,7 @@ function Founder() {
             </p>
             <Link
               href={founder.link}
+              target="_blank"
               className="absolute bottom-10 contactButton "
             >
               {" "}
