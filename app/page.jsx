@@ -1,9 +1,12 @@
 import Image from "next/image";
-import ProfileSlider from "@/components/ProfileSlider";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import TechStack from "@/components/TechStack";
 import AboutUs from "@/components/AboutUs";
+import Portfolio from "@/components/Portfolio";
+import Services from "@/components/Services";
+import Founder from "@/components/Founder";
+import Contacts from "@/components/Contacts";
 
 export default function Home() {
   return (
@@ -12,12 +15,9 @@ export default function Home() {
       <Hero />
       <TechStack />
       <AboutUs />
-      <div className="w-full h-[60rem]">
-        <ProfileSlider />
-      </div>
-      <div className="h-[50rem] flex items-center">
-        <p>hi</p>
-      </div>
+      <Portfolio />
+      <Services />
+      <Contacts />
     </main>
   );
 }
