@@ -1,23 +1,16 @@
 "use client";
 import * as THREE from "three";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import {
-  Image,
-  Environment,
-  ScrollControls,
-  useScroll,
-  useTexture,
-} from "@react-three/drei";
+import { Image, Environment, useTexture } from "@react-three/drei";
 import { easing } from "maath";
 import "./util";
 
-function Rig(props) {
+function Rig({ scrollOffset, ...props }) {
   const ref = useRef();
-  const scroll = useScroll();
   useFrame((state, delta) => {
-    ref.current.rotation.y = -scroll.offset * (Math.PI * 2); // Rotate contents
-    state.events.update(); // Raycasts every frame rather than on pointer-move
+    // Use the scrollOffset to rotate the contents
+    ref.current.rotation.y = -scrollOffset * (Math.PI * 2); // Rotate contents
     easing.damp3(
       state.camera.position,
       [-state.pointer.x * 2, state.pointer.y + 1.5, 10],
@@ -79,9 +72,7 @@ function Banner(props) {
   const ref = useRef();
   const texture = useTexture("/work_.png");
   texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
-  const scroll = useScroll();
   useFrame((state, delta) => {
-    ref.current.material.time.value += Math.abs(scroll.delta) * 4;
     ref.current.material.map.offset.x += delta / 2;
   });
   return (
@@ -98,21 +89,36 @@ function Banner(props) {
   );
 }
 
-const ProfileSlider = () => (
-  <Canvas
-    className="canvas overflow-hidden h-100vh"
-    camera={{ position: [0, 0, 100], fov: 15 }}
-    style={{ background: "#121120" }}
-  >
-    <fog attach="fog" args={["#a79", 8.5, 12]} />
-    <ScrollControls pages={4} infinite>
-      <Rig rotation={[0, 0, 0.15]}>
+const ProfileSlider = () => {
+  const [scrollOffset, setScrollOffset] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset =
+        window.scrollY / (document.body.scrollHeight - window.innerHeight);
+      setScrollOffset(offset);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  return (
+    <Canvas
+      className="canvas"
+      camera={{ position: [0, 0, 10], fov: 15 }}
+      gl={{ alpha: true }}
+      style={{ background: "transparent" }}
+    >
+      <Rig scrollOffset={scrollOffset}>
         <Carousel />
       </Rig>
       <Banner position={[0, -0.15, 0]} />
-    </ScrollControls>
-    {/* <Environment preset="dawn" background blur={0.5} />*/}
-  </Canvas>
-);
+    </Canvas>
+  );
+};
 
 export default ProfileSlider;
