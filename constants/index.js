@@ -64,15 +64,15 @@ export const stacks = [
   },
   {
     source: "/swift.svg",
-    id: "typescript",
-    name: "Typescript",
+    id: "Swift",
+    name: "Swift",
     use: "Mobile Application",
   },
   {
     source: "/aws.svg",
     id: "typescript",
     name: "Cloud",
-    use: "Storage and Deployment",
+    use: "Storage/Deployment",
   },
   {
     source: "/fastapi.svg",
@@ -85,5 +85,80 @@ export const stacks = [
     id: "nuxt",
     name: "Nuxt",
     use: "Frontend Framework",
+  },
+];
+
+export const projects = [
+  {
+    img: "/FAVisualizer.png",
+    logo: "/faLogo.svg",
+    name: "FAVisualizer",
+    description:
+      "A visualizer for generating DFA diagrams from regular expressions",
+    link: "https://favisualizer.vercel.app/",
+  },
+  {
+    img: "/Beacon.png",
+    logo: "/Beaconlogo.png",
+    name: "Beacon",
+    description:
+      "A career guidance web app that uses Generative AI providing visual road maps",
+    link: "https://beaconph.site/",
+  },
+];
+
+export const services = [
+  {
+    id: 1,
+    name: "Design System",
+  },
+  {
+    id: 2,
+    name: "Product",
+  },
+  {
+    id: 3,
+    name: "Website",
+  },
+  {
+    id: 4,
+    name: "Applications",
+  },
+  {
+    id: 5,
+    name: "Logo Design",
+  },
+];
+
+export const servicesInfo = [
+  {
+    id: 1,
+    name: "Design System Expert",
+    description: "Consistent and Scalable",
+    img: "bx bxl-sketch",
+  },
+  {
+    id: 2,
+    name: "UX & UI Design",
+    description: "Aesthetic and User-Centric",
+    img: "bx bxs-vector",
+  },
+  {
+    id: 3,
+    name: "Website",
+    description: "Responsive and Engaging",
+    img: "bx bxl-docker",
+  },
+  {
+    id: 4,
+    name: "Applications",
+    description: "Interactive and reliable",
+    img: "bx bxl-apple",
+  },
+  {
+    id: 5,
+    name: "Logo Design",
+    description: "Captivating and Impactful",
+    img: "bx bx-color",
   },
 ];
