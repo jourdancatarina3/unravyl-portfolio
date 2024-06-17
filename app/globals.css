@@ -103,3 +103,353 @@ canvas {
       /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   filter: blur(100px);
 }
+
+/* FREELANCE WEB DEVELOPERS   */
+
+.headers {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 100.5%;
+  /* or 96px */
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #fff0ff;
+
+  opacity: 0.86;
+  text-shadow: 0px 0px 13.3769px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2.82488px);
+  /* Note: backdrop-filter has minimal browser support */
+}
+
+.image-container {
+  overflow: hidden;
+  width: 96%; /* Adjust as needed */
+  height: 30rem; /* Match the height of the image */
+  position: relative;
+}
+
+.image {
+  transition: transform 0.3s ease;
+  z-index: 1;
+  position: relative;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the darkness level */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Ensures the pseudo-element does not interfere with other interactions */
+  z-index: 2;
+}
+
+.image-container:hover .image {
+  transform: scale(1.2); /* Adjust the scale value as needed */
+}
+
+.image-container:hover::before {
+  opacity: 1;
+}
+
+.hover-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  z-index: 3;
+}
+
+.image-container:hover .hover-button {
+  opacity: 1;
+}
+
+/* Frame 42200 */
+
+.box-sizing {
+  height: 40px;
+  background: linear-gradient(
+    160.33deg,
+    rgba(217, 217, 217, 0.04) 13.17%,
+    rgba(255, 255, 255, 0.01) 97.91%
+  );
+  box-shadow: 0px 4px 20px rgba(47, 24, 108, 0.1),
+    0px 4px 20px -1px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(20px); /* Add this line for Safari support */
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 30px;
+}
+
+/* For better compatibility with older browsers, you can add more prefixes */
+.box-sizing {
+  height: 40px;
+  background: linear-gradient(
+    160.33deg,
+    rgba(217, 217, 217, 0.04) 13.17%,
+    rgba(255, 255, 255, 0.01) 97.91%
+  );
+  box-shadow: 0px 4px 20px rgba(47, 24, 108, 0.1),
+    0px 4px 20px -1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); /* For Safari 9+ */
+  -moz-backdrop-filter: blur(20px); /* For Firefox */
+  -o-backdrop-filter: blur(20px); /* For Opera */
+  -ms-backdrop-filter: blur(20px); /* For IE */
+  border-radius: 30px;
+}
+.container {
+  width: 60px; /* Adjust as needed */
+  height: 60px; /* Adjust as needed */
+  background: #1c1c1c; /* Dark background color */
+  border-radius: 20px; /* Rounded corners */
+  position: relative;
+  overflow: hidden;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 30px;
+  background: linear-gradient(
+    160.33deg,
+    rgba(217, 217, 217, 0.04) 13.17%,
+    rgba(255, 255, 255, 0.01) 97.91%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 30px;
+  background: linear-gradient(
+    160.33deg,
+    rgba(255, 223, 0, 0.8) 13.17%,
+    rgba(255, 127, 0, 0.4) 97.91%
+  );
+  z-index: 2;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.grid-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #872efc;
+  height: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px; /* Size of the grid cells */
+  z-index: 0;
+}
+
+.containerGlow {
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  padding: 20px; /* Adjust as needed */
+  background: #1c1c1c; /* Dark background color */
+  border-radius: 20px; /* Rounded corners */
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.5), 0 0 20px rgba(0, 0, 255, 0.5); /* Outer shadow */
+  margin: 20px auto; /* Center the container */
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 20px;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 0, 255, 0.5),
+    rgba(0, 0, 255, 0.5)
+  ); /* Gradient border */
+  z-index: -1;
+}
+
+.inner-container {
+  background: #1c1c1c; /* Same as container background */
+  border-radius: 18px; /* Slightly less than the container's radius */
+
+  position: relative;
+  z-index: 1;
+  @apply px-4 py-1;
+}
+
+.glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  background: radial-gradient(circle, rgba(255, 0, 255, 0.2), transparent);
+  z-index: -2;
+  pointer-events: none;
+}
+
+.contactButton {
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(
+    90deg,
+    #7b2ff7,
+    #f107a3
+  ); /* Gradient background */
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none; /* Remove underline for links */
+}
+
+.contactButton:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0px 4px 15px rgba(123, 47, 247, 0.4),
+    0px 4px 15px rgba(241, 7, 163, 0.4); /* Hover shadow effect */
+}
+.circle-container {
+  position: relative;
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */
+  border-radius: 50%;
+  background: #1c1c1c; /* Dark background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.circle-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1),
+    rgba(0, 0, 0, 0.7)
+  );
+  border-radius: 50%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.circle-container::after {
+  content: "";
+  position: absolute;
+  width: 200%; /* Larger size for the shadow effect */
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1),
+    rgba(0, 0, 0, 0.7)
+  );
+  border-radius: 50%;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.semi-circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%; /* Adjust the height as needed */
+  background: linear-gradient(to top, rgba(28, 28, 28, 0.8), rgba(0, 0, 0, 0));
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  z-index: 2;
+}
+
+.logo {
+  position: relative;
+  z-index: 3; /* Ensure the logo is above other elements */
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  background: #1c1c1c; /* Dark background color */
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff; /* White text color */
+  font-size: 16px; /* Adjust font size as needed */
+  font-weight: 500; /* Medium font weight */
+  position: relative;
+  overflow: hidden;
+}
+
+.status-badge::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 25px;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(0, 0, 0, 0.1)
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.status-badge .dot {
+  width: 10px; /* Adjust size as needed */
+  height: 10px; /* Adjust size as needed */
+  background: #00ff00; /* Green color */
+  border-radius: 50%;
+  margin-right: 8px; /* Space between dot and text */
+  z-index: 2;
+}
+
+.status-badge .text {
+  z-index: 2;
+}
