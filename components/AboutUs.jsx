@@ -4,7 +4,10 @@ import ProfileSlider from "@/components/ProfileSlider";
 
 function AboutUs() {
   return (
-    <section className="flex items-center relative justify-center flex-col mt-[10rem]">
+    <section
+      id="aboutUs"
+      className="flex items-center relative justify-center flex-col mt-[10rem]"
+    >
       <div class="backgrounds z-0 absolute top-[5rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
       <h1 className="text-[5rem] font-black header">ABOUT US</h1>
       <div className="w-full flex items-center justify-center mt-[-2rem]">
@@ -19,9 +22,12 @@ function AboutUs() {
             presence and drive business growth, ensuring each project exceeds
             expectations through precision and innovation.
           </p>
-          <div className="w-[11rem] py-3 flex items-center text-xl justify-center rounded-xl text-white bg-[#83828A]">
+          <a
+            href="#founder"
+            className="w-[11rem] py-3 flex items-center text-xl justify-center rounded-xl text-white bg-[#83828A]"
+          >
             Know More <i class="bx bx-right-arrow-alt text-white text-xl"></i>
-          </div>
+          </a>
         </div>
         <div className=" w-[60%] h-[40rem]">
           <ProfileSlider />
