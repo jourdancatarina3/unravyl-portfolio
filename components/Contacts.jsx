@@ -5,7 +5,10 @@ import Link from "next/link";
 
 function Contacts() {
   return (
-    <section className="flex items-center relative justify-center flex-col mt-[5rem]">
+    <section
+      id="contacts"
+      className="flex items-center relative justify-center flex-col mt-[5rem]"
+    >
       <div class="backgrounds z-0 absolute top-[5rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
       <h1 className="text-[5rem] font-black header mb-[5rem]">Contacts</h1>
       <div class="containerGlow relative">
@@ -41,18 +44,29 @@ function Contacts() {
             </div>
             <div className="flex h-full mt-[-2rem] items-start justify-start gap-4 flex-col">
               <div className="flex  items-center gap-3 justify-start">
-                <i class="bx bxl-github text-[2rem]"></i>
-                <i class="bx bxl-linkedin-square text-[2rem]"></i>
+                <Link href="https://github.com/unravyl/" target="_blank">
+                  <i class="bx bxl-github text-[2rem]"></i>
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/company/unravyl/"
+                  target="_blank"
+                >
+                  <i class="bx bxl-linkedin-square text-[2rem]"></i>
+                </Link>
               </div>
-              <a href="#" class="contactButton">
+              <Link
+                href="https://www.linkedin.com/company/unravyl"
+                target="_blank"
+                class="contactButton"
+              >
                 Let's create magic together
-              </a>
+              </Link>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="profileCircle mt-[3rem] rounded-full flex items-center justify-center">
+      <div className="profileCircle mt-[4rem] rounded-full flex items-center justify-center">
         <Image
           alt="bgProfile"
           src="/logo.png"
