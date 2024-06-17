@@ -14,9 +14,9 @@ function TechStack() {
     setProjectHovered(null);
   };
   return (
-    <section className="flex mt-[15rem] items-center justify-center flex-col">
+    <section className="flex items-center justify-center flex-col">
       <div className="flex flex-col items-center justify-center gap-5">
-        <h1 className="text-4xl">
+        <h1 className="text-4xl max-w-[65rem] text-center">
           Over the years, we&apos;ve empowered companies and streamline services
           for the world
         </h1>
@@ -24,7 +24,7 @@ function TechStack() {
           Creating websites that make a real impact fit to your needs
         </h2>
       </div>
-      <div className="mt-[5rem] grid grid-cols-6 gap-[5rem] w-3/4 md:gap-[8rem] items-center  justify-center">
+      <div className="mt-[5rem] grid grid-cols-6 gap-[3rem] w-[60%] md:gap-[5rem] items-center  justify-center">
         {stacks.map((stack, index) => (
           <div key={stack.id} className="relative flex flex-col items-center ">
             <Image
