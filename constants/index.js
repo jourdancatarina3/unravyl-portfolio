@@ -107,6 +107,37 @@ export const projects = [
   },
 ];
 
+export const founders = [
+  {
+    name: "Maxell Milay",
+    title: "CEO & Co-founder",
+    description: "Fullstack devekoper, AI Developer, CHix boi Developing",
+    img: "/jed.jpg",
+    link: "https://maxell-milay.vercel.app/",
+  },
+  {
+    name: "Sheldon Arthur",
+    title: "CEO & Co-founder",
+    description: "Fullstack developer, full stack pedophile, fullstack racist ",
+    img: "/jed.jpg",
+    link: "https://sheldonsagrado.vercel.app/",
+  },
+  {
+    name: "Jourdan Catarina",
+    title: "CEO & Co-founder",
+    description: "Fullstack devekoper",
+    img: "/jed.jpg",
+    link: "https://jourdancatarina.vercel.app/",
+  },
+  {
+    name: "Jed Edison",
+    title: "CEO & Co-founder",
+    description: "Fullstack devekoper",
+    img: "/jed.jpg",
+    link: "https://jed-donaire.vercel.app/",
+  },
+];
+
 export const services = [
   {
     id: 1,

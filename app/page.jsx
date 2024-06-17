@@ -17,6 +17,7 @@ export default function Home() {
       <AboutUs />
       <Portfolio />
       <Services />
+      <Founder />
       <Contacts />
     </main>
   );
