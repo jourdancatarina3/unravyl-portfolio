@@ -15,25 +15,18 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  color: #f5f5f5;
+  background: #121120;
 }
 
 body {
   margin: 0;
-  overflow: hidden;
+  color: #f5f5f5;
   font-family: "Inter";
-  background: #fdfdfd;
+  font-family: "Inter", sans-serif;
+  background: #121120;
   cursor: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxMCIgZmlsbD0iI0U4QjA1OSIvPjwvc3ZnPg=="),
     auto;
-}
-
-a {
-  color: black;
-}
-
-a {
-  pointer-events: all;
-  color: black;
-  text-decoration: none;
 }
 
 svg {
@@ -52,6 +45,15 @@ svg {
 canvas {
   display: block;
   animation: fade-in 5s ease 1s forwards;
+  overflow: hidden; /* Hide the scrollbar */
+}
+
+.canvas::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar in Webkit browsers */
+}
+
+.canvas {
+  scrollbar-width: none; /* Hide the scrollbar in Firefox */
 }
 
 .container {
@@ -59,4 +61,45 @@ canvas {
   height: 100vh;
   overflow: hidden;
   position: relative;
+}
+
+.navbar {
+  @apply px-10;
+}
+
+.profileCircle {
+  width: 134px;
+  height: 134px;
+  left: 643px;
+  top: 329px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(131, 130, 138, 0.2) 0%,
+    rgba(131, 130, 138, 0) 100%
+  );
+  opacity: 0.77;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+/* Ellipse 3 */
+
+.backgrounds {
+  position: absolute;
+  width: 1330px;
+  height: 288px;
+
+  background: linear-gradient(
+      270.51deg,
+      rgba(255, 156, 84, 0.4) 35.86%,
+      rgba(255, 255, 255, 0.216033) 52.65%,
+      rgba(0, 0, 0, 0) 72.38%
+    ),
+    radial-gradient(
+        69.09% 95.18% at 42.78% 42.58%,
+        #621abe 0%,
+        rgba(36, 33, 75, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  filter: blur(100px);
 }
