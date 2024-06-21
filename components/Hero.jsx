@@ -15,10 +15,10 @@ function Hero() {
           className="size-[5rem]"
         ></Image>
       </div>
-      <div className=" flex headers  flex-col mt-[4rem] items-center justify-center text-[7rem] font-black">
-        <h1>FREELANCE</h1>
-        <h1>WEB</h1>
-        <h1>DEVELOPERS</h1>
+      <div className="flex flex-col mt-[4rem] items-center justify-center">
+        <h1 className="font-black text-8xl">FREELANCE</h1>
+        <h1 className="font-black text-8xl">WEB</h1>
+        <h1 className="font-black text-8xl">DEVELOPERS</h1>
       </div>
       <div className="w-full absolute top-0 right-0">
         <Image
