@@ -37,9 +37,9 @@ function Contacts() {
                 Drop us a line or say on social networks
               </p>
               <p className="text-justify text-gray-400">
-                Whether you're a technology corporate in need of support or an
+                Whether you&apos;re a technology corporate in need of support or an
                 early-stage company looking to level up your design and building
-                software application, we'd love to talk about your project
+                software application, we&apos;d love to talk about your project
               </p>
             </div>
             <div className="flex h-full mt-[-2rem] items-start justify-start gap-4 flex-col">
@@ -59,7 +59,7 @@ function Contacts() {
                 target="_blank"
                 class="contactButton"
               >
-                Let's create magic together
+                Let&apos;s create magic together
               </Link>
             </div>
           </div>
