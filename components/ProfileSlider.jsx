@@ -58,6 +58,7 @@ function Card({ url, ...props }) {
       ref={ref}
       url={url}
       transparent
+      alt="Profile Image"
       side={THREE.DoubleSide}
       onPointerOver={pointerOver}
       onPointerOut={pointerOut}
