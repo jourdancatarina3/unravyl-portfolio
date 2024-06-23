@@ -3,6 +3,8 @@ import * as THREE from "three";
 import { useEffect, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Image, Environment, useTexture } from "@react-three/drei";
+import { animateWithGsap } from '@/utils/animations';
+import { useGSAP } from '@gsap/react';
 import { easing } from "maath";
 import "./util";
 
@@ -92,6 +94,14 @@ function Banner(props) {
 
 const ProfileSlider = () => {
   const [scrollOffset, setScrollOffset] = useState(0);
+  useGSAP(()=> {
+    animateWithGsap('.gProfile', {
+      opacity: 1,
+      y: 5,
+      duration: 1,
+      ease: 'power2.inOut'
+    })
+  },[])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -109,7 +119,7 @@ const ProfileSlider = () => {
 
   return (
     <Canvas
-      className="canvas"
+      className="canvas gProfile opacity-0"
       camera={{ position: [0, 0, 10], fov: 15 }}
       gl={{ alpha: true }}
       style={{ background: "transparent" }}
