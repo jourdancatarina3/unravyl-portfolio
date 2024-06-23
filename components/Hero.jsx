@@ -7,7 +7,7 @@ function Hero() {
     <div className="h-lvh w-screen flex justify-center items-center">
       <section className="w-full flex flex-col gap-10 h-[35rem] lg:h-[50rem] items-center justify-start relative">
         <h1 className="text-4xl font-black">UNRAVYL</h1>
-        <div className="profileCircle lg:z-0 z-20 rounded-full flex items-center justify-center">
+        <div className="profileCircle lg:z-0 z-20 rounded-full flex items-center justify-center drop-shadow-lg">
           <Image
             alt="bgProfile"
             src="/logo.png"
