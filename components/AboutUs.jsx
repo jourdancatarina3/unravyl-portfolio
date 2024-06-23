@@ -10,8 +10,8 @@ function AboutUs() {
     >
       <div class="backgrounds z-0 absolute top-[5rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
       <h1 className="text-6xl lg:text-[5rem] font-black header">ABOUT US</h1>
-      <div className="w-full flex items-center flex-col lg:flex-row justify-center mt-[-2rem]">
-        <div className="flex items-center flex-col px-4 lg:px-0 lg:pl-[10rem] gap-5 lg:gap-10 mt-[5rem] justify-center">
+      <div className="w-full flex items-center flex-col gap-3 px-5 lg:flex-row justify-center mt-[-2rem]">
+        <div className="flex items-center flex-col px-4 lg:px-0 gap-5 lg:gap-10 mt-[5rem] justify-center">
           <h1 className="text-white font-bold text-xl text-center lg:text-2xl">
             From Saas to Website & Mobile Application
           </h1>
