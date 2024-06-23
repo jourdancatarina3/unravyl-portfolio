@@ -10,15 +10,17 @@ import Contacts from "@/components/Contacts";
 
 export default function Home() {
   return (
-    <main className="flex items-center justify-center flex-col ">
-      <Navbar />
-      <Hero />
-      <TechStack />
-      <AboutUs />
-      <Portfolio />
-      <Services />
-      <Founder />
-      <Contacts />
-    </main>
+    <div className="flex justify-center">
+      <main className="flex items-center justify-center flex-col w-full">
+        <Navbar />
+        <Hero />
+        <TechStack />
+        <AboutUs />
+        <Portfolio />
+        <Services />
+        <Founder />
+        <Contacts />
+      </main>
+    </div>
   );
 }

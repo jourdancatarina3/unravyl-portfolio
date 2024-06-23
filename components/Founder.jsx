@@ -38,7 +38,7 @@ function Founder() {
   return (
     <section
       id="founder"
-      className="flex items-center relative justify-center w-full flex-col mt-[5rem]"
+      className="flex items-center relative justify-center w-full flex-col mt-[5rem] max-w-[100rem]"
     >
       <div class="backgrounds z-0 absolute top-[5rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
       <h1 className="text-[5rem] font-black header">Founder</h1>
