@@ -130,7 +130,6 @@ canvas {
   filter: blur(100px);
 }
 
-
 /* FREELANCE WEB DEVELOPERS   */
 
 .headers {
@@ -352,7 +351,7 @@ canvas {
 
 .contactButton {
   display: inline-block;
-  padding: 10px 20px; /* Adjust padding as needed */
+  padding: 14px 20px; /* Adjust padding as needed */
   font-size: 16px; /* Adjust font size as needed */
   font-weight: bold;
   color: #ffffff;
@@ -365,7 +364,7 @@ canvas {
   border-radius: 10px; /* Rounded corners */
   text-align: center;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
   text-decoration: none; /* Remove underline for links */
 }
 

@@ -46,7 +46,7 @@ function Founder() {
         {founders.map((founder, index) => (
           <div
             key={index}
-            className="bg-[#292835] cards rounded-xl lg:h-[40rem] relative flex flex-col items-center "
+            className="bg-[#292835] cards rounded-xl lg:h-[40rem] relative flex flex-col items-center"
           >
             <Image
               src="/Union.svg"
