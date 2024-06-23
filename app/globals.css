@@ -126,18 +126,6 @@ canvas {
   filter: blur(100px);
 }
 
-@media (max-width: 768px) {
-  .backgrounds {
-    height: 25vh;
-  }
-}
-
-@media (max-width: 480px) {
-  .backgrounds {
-    height: 20vh;
-  }
-}
-
 
 /* FREELANCE WEB DEVELOPERS   */
 

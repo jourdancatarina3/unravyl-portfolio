@@ -10,7 +10,7 @@ function Contacts() {
       className="flex items-center relative justify-center flex-col mt-[5rem]"
     >
       <div class="backgrounds z-0 absolute top-[5rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
-      <h1 className="text-[5rem] font-black header mb-[5rem]">Contacts</h1>
+      <h1 className="text-6xl lg:text-[5rem] font-black header mb-[5rem]">CONTACTS</h1>
       <div class="containerGlow relative">
         <i class="bx bx-network-chart text-[#7b2ff7] text-[20rem] absolute top-[-8rem] right-[-8rem] z-[40]"></i>
         <div class="glow"></div>

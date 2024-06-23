@@ -11,7 +11,7 @@ function Services() {
       className="flex items-center relative justify-center flex-col mt-[5rem]"
     >
       <div class="backgrounds z-0 absolute top-[5rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
-      <h1 className="text-[5rem] font-black header">Services</h1>
+      <h1 className="text-6xl lg:text-[5rem] font-black header">SERVICES</h1>
       <div className="flex items-center justify-center flex-col">
         <div className="flex items-center flex-wrap gap-2 mt-[4rem] justify-center">
           {services.map((serv) => (

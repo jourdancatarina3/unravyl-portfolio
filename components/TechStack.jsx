@@ -15,16 +15,16 @@ function TechStack() {
   };
   return (
     <section className="flex items-center justify-center flex-col">
-      <div className="flex flex-col items-center justify-center gap-5">
-        <h1 className="text-4xl max-w-[65rem] text-center">
+      <div className="flex flex-col items-center justify-center gap-5 px-8">
+        <h1 className="text-lg font-bold lg:text-4xl text-center">
           Over the years, we&apos;ve empowered companies and streamline services
           for the world
         </h1>
-        <h2 className="text-2xl text-gray-400">
+        <h2 className="lg:text-2xl text-gray-400 text-center">
           Creating websites that make a real impact fit to your needs
         </h2>
       </div>
-      <div className="mt-[5rem] grid grid-cols-6 gap-[3rem] w-[60%] md:gap-[5rem] items-center  justify-center">
+      <div className="mt-[5rem] grid grid-cols-4 lg:grid-cols-6 gap-[3rem] w-[100%] lg:w-[60%] md:gap-[5rem] items-center  justify-center">
         {stacks.map((stack, index) => (
           <div key={stack.id} className="relative flex flex-col items-center ">
             <Image
@@ -38,7 +38,7 @@ function TechStack() {
               className=" object-cover w-[6rem] sm:w-[7rem] md:w-[9rem] lg:w-[10.5rem] xl:w-[11rem] mb-2 hover:scale-110 transition"
             />
             {projectHovered === index && (
-              <div className="absolute   -bottom-20 text-2xl duration-500 ">
+              <div className="hidden md:block absolute   -bottom-20 text-2xl duration-500 ">
                 <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-center">
                   {stack.name}
                 </h1>
