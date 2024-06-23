@@ -125,8 +125,8 @@ export const founders = [
   {
     name: "Jourdan Catarina",
     title: "CEO & Co-founder",
-    description: "Fullstack devekoper",
-    img: "/jed.jpg",
+    description: "A full stack developer with expertise in web and application development. Skilled in creating seamless, user-centric digital experiences across various platforms. Passionate about leveraging cutting-edge technologies to deliver innovative solutions that drive business growth and enhance user engagement.",
+    img: "/jourdan.png",
     link: "https://jourdancatarina.vercel.app/",
   },
   {

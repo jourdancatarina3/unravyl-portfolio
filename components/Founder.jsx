@@ -55,13 +55,15 @@ function Founder() {
               width={1340}
               className="size-[40rem] absolute"
             ></Image>
-            <Image
-              src={founder.img}
-              alt="cover"
-              height={1340}
-              width={1340}
-              className="size-[7rem] rounded-full mt-[4rem]"
-            ></Image>
+            <div className="relative w-[7rem] h-[7rem] mt-[4rem] rounded-full overflow-hidden">
+              <Image
+                src={founder.img}
+                alt={`${founder.name} profile`}
+                layout="fill"
+                objectFit="cover"
+                className="rounded-full"
+              />
+            </div>
             <h1 className="text-white text-3xl lg:text-4xl font-medium mt-[2rem]">
               {founder.name}
             </h1>
