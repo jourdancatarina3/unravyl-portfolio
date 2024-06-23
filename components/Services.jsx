@@ -13,7 +13,7 @@ function Services() {
       <div class="backgrounds z-0 absolute top-[5rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
       <h1 className="text-[5rem] font-black header">Services</h1>
       <div className="flex items-center justify-center flex-col">
-        <div className="flex items-center gap-2 mt-[4rem] justify-center">
+        <div className="flex items-center flex-wrap gap-2 mt-[4rem] justify-center">
           {services.map((serv) => (
             <div
               key={serv.id}
@@ -37,7 +37,7 @@ function Services() {
           {servicesInfo.map((serv) => (
             <div
               key={serv.id}
-              className="flex items-center gap-5 rounded-lg bg-[#3c3939] w-[25rem] h-[7rem] justify-start px-5"
+              className="flex items-center gap-5 rounded-lg bg-[#3c3939] w-full lg:w-[25rem] h-[7rem] justify-start px-5"
             >
               <div class="container">
                 <div class="grid-pattern flex items-center justify-center">

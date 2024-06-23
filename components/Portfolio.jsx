@@ -42,19 +42,19 @@ function AboutUs() {
     >
       <div class="backgrounds z-0 absolute top-[5rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
       <h1 className="text-[5rem] font-black header">Projects</h1>
-      <div className="flex items-center gap-5 w-3/4 mt-[5rem] justify-center">
+      <div className="flex items-center flex-col lg:flex-row gap-5 lg:w-3/4 mt-[5rem] justify-center">
         {projects.map((proj) => (
           <div
             key={proj.name}
-            className="bg-[#554E4E] portfolios w-1/2 rounded-xl flex items-center flex-col justify-center"
+            className="bg-[#554E4E] portfolios w-full lg:w-1/2 rounded-xl flex items-center flex-col justify-center"
           >
-            <div className="image-container   rounded-t-xl flex items-center mt-[0.7rem] justify-center">
+            <div className="image-container rounded-t-xl flex items-center mt-[0.7rem] justify-center">
               <Image
                 src={proj.img}
                 alt={proj.name}
                 height={1450}
                 width={1450}
-                className="image w-full h-[30rem] "
+                className="image w-full h-[30rem]"
               ></Image>
               <Link
                 href={proj.link}
@@ -65,7 +65,7 @@ function AboutUs() {
               </Link>
             </div>
 
-            <div className="flex items-center pl-5 py-5 justify-start">
+            <div className="flex items-center lg:pl-5 py-5 justify-start">
               <Image
                 src={proj.logo}
                 alt={proj.name}

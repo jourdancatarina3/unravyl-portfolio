@@ -6,7 +6,7 @@ function Hero() {
   return (
     <section className="w-full flex flex-col h-[50rem] items-center justify-start relative">
       <h1 className="text-4xl font-black">UNRAVYL</h1>
-      <div className="profileCircle rounded-full flex items-center justify-center">
+      <div className="profileCircle lg:z-0 z-20 rounded-full flex items-center justify-center">
         <Image
           alt="bgProfile"
           src="/logo.png"
@@ -16,9 +16,7 @@ function Hero() {
         ></Image>
       </div>
       <div className="flex flex-col mt-[4rem] items-center justify-center">
-        <h1 className="font-black text-8xl">FREELANCE</h1>
-        <h1 className="font-black text-8xl">WEB</h1>
-        <h1 className="font-black text-8xl">DEVELOPERS</h1>
+        <h1 className="font-black text-5xl lg:text-8xl text-center">FREELANCE <br/> WEB <br /> DEVELOPERS </h1>
       </div>
       <div className="w-full absolute top-0 right-0">
         <Image

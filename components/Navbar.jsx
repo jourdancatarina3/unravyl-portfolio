@@ -16,7 +16,7 @@ const Navbar = () => {
           <i class="bx bxl-linkedin-square text-[2rem]"></i>
         </Link>
       </div>
-      <ul className="list-none sm:flex  hidden justify-end items-center flex-1">
+      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
