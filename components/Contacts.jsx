@@ -12,10 +12,10 @@ function Contacts() {
       <div class="backgrounds z-0 absolute top-[5rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
       <h1 className="text-6xl lg:text-[5rem] font-black header mb-[5rem]">CONTACTS</h1>
       <div class="containerGlow relative">
-        <i class="bx bx-network-chart text-[#7b2ff7] text-[20rem] absolute top-[-8rem] right-[-8rem] z-[40]"></i>
+        <i class="bx bx-network-chart text-[#7b2ff7] text-[20rem] absolute top-[-7.5rem] lg:top-[-8rem] right-[-10rem] lg:right-[-8rem] z-[20]"></i>
         <div class="glow"></div>
         <div class="inner-container">
-          <div className="flex items-center  gap-5 justify-start">
+          <div className="flex items-center gap-5 justify-start">
             <div class="circle-container">
               <Image
                 src="/logo.png"
@@ -27,7 +27,7 @@ function Contacts() {
             </div>
             <div class="status-badge">
               <div class="dot"></div>
-              <div class="text">Available for work</div>
+              <div className="text-sm">Available for work</div>
             </div>
           </div>
           <div className="flex gap-4 items-center mt-7 justify-start flex-col lg:flex-row mb-[2rem]">

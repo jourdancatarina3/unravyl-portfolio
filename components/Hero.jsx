@@ -17,9 +17,9 @@ function Hero() {
       </div>
       <div className="flex flex-col mt-[4rem] items-center justify-center">
         <h1 className="font-black text-5xl lg:text-8xl text-center">FREELANCE <br/> WEB <br /> DEVELOPERS </h1>
-        <div class="backgrounds z-0 absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-50 items-center justify-center"></div>
+        <div class="backgrounds md:hidden z-0 absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-50 items-center justify-center"></div>
       </div>
-      <div className="hidden lg:block w-full absolute top-0 right-0">
+      <div className="hidden md:block w-full absolute top-0 right-0">
         <Image
           src="/bg.png"
           alt="bg"
@@ -27,7 +27,7 @@ function Hero() {
           width={21240}
           className="w-full opacity-35 z-10"
         ></Image>
-        <div class="lg:backgrounds z-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
+        <div class="backgrounds z-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
       </div>{" "}
       <Link
         href="https://www.linkedin.com/company/unravyl"
