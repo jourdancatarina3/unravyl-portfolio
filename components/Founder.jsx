@@ -40,7 +40,7 @@ function Founder() {
       id="founder"
       className="flex items-center relative justify-center w-full flex-col mt-[5rem] max-w-[100rem]"
     >
-      <div class="backgrounds z-0 absolute top-[5rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
+      <div className="backgrounds z-0 absolute top-[5rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
       <h1 className="text-6xl lg:text-[5rem] font-black header">FOUNDER</h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-[3rem] gap-10 w-full lg:px-[12rem]">
         {founders.map((founder, index) => (

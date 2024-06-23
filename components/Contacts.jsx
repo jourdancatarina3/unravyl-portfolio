@@ -9,24 +9,24 @@ function Contacts() {
       id="contacts"
       className="flex items-center relative justify-center flex-col mt-[5rem]"
     >
-      <div class="backgrounds z-0 absolute top-[5rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
+      <div className="backgrounds z-0 absolute top-[5rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
       <h1 className="text-6xl lg:text-[5rem] font-black header mb-[5rem]">CONTACTS</h1>
-      <div class="containerGlow relative">
-        <i class="bx bx-network-chart text-[#7b2ff7] text-[20rem] absolute top-[-7.5rem] lg:top-[-8rem] right-[-10rem] lg:right-[-8rem] z-[20]"></i>
-        <div class="glow"></div>
-        <div class="inner-container">
+      <div className="containerGlow relative">
+        <i className="bx bx-network-chart text-[#7b2ff7] text-[20rem] absolute top-[-7.5rem] lg:top-[-8rem] right-[-10rem] lg:right-[-8rem] z-[20]"></i>
+        <div className="glow"></div>
+        <div className="inner-container">
           <div className="flex items-center gap-5 justify-start">
-            <div class="circle-container">
+            <div className="circle-container">
               <Image
                 src="/logo.png"
                 alt="Logo"
                 height={2490}
                 width={2404}
-                class="logo size-[4rem]"
+                className="logo size-[4rem]"
               ></Image>
             </div>
-            <div class="status-badge">
-              <div class="dot"></div>
+            <div className="status-badge">
+              <div className="dot"></div>
               <div className="text-sm">Available for work</div>
             </div>
           </div>
@@ -45,19 +45,19 @@ function Contacts() {
             <div className="flex h-full lg:mt-[-2rem] items-center lg:items-start justify-start gap-4 flex-col">
               <div className="flex items-center gap-3 justify-start">
                 <Link href="https://github.com/unravyl/" target="_blank">
-                  <i class="bx bxl-github text-[2rem]"></i>
+                  <i className="bx bxl-github text-[2rem]"></i>
                 </Link>
                 <Link
                   href="https://www.linkedin.com/company/unravyl/"
                   target="_blank"
                 >
-                  <i class="bx bxl-linkedin-square text-[2rem]"></i>
+                  <i className="bx bxl-linkedin-square text-[2rem]"></i>
                 </Link>
               </div>
               <Link
                 href="https://www.linkedin.com/company/unravyl"
                 target="_blank"
-                class="contactButton"
+                className="contactButton"
               >
                 Let&apos;s create magic together
               </Link>

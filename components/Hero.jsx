@@ -20,7 +20,7 @@ function Hero() {
           <h1 className="font-black text-5xl lg:text-8xl text-center">
             FREELANCE <br /> WEB <br /> DEVELOPERS{" "}
           </h1>
-          <div class="backgrounds md:hidden z-0 absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-50 items-center justify-center"></div>
+          <div className="backgrounds md:hidden z-0 absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-50 items-center justify-center"></div>
         </div>
         <div className="hidden md:block w-full absolute top-0 right-0">
           <Image
@@ -30,7 +30,7 @@ function Hero() {
             width={21240}
             className="w-full opacity-20 z-10 no-drag"
           ></Image>
-          <div class="backgrounds z-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
+          <div className="backgrounds z-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
         </div>{" "}
         <Link
           href="https://www.linkedin.com/company/unravyl"

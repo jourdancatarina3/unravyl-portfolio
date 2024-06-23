@@ -10,7 +10,7 @@ function Services() {
       id="services"
       className="flex items-center relative justify-center flex-col mt-[5rem]"
     >
-      <div class="backgrounds z-0 absolute top-[5rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
+      <div className="backgrounds z-0 absolute top-[5rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
       <h1 className="text-6xl lg:text-[5rem] font-black header">SERVICES</h1>
       <div className="flex items-center justify-center flex-col">
         <div className="flex items-center flex-wrap gap-2 mt-[4rem] justify-center">
@@ -19,7 +19,7 @@ function Services() {
               key={serv.id}
               className="box-sizing flex items-center justify-center px-5"
             >
-              <i class="bx bx-check text-xl lg:text-2xl text-[#B084FF] pr-1"></i>
+              <i className="bx bx-check text-xl lg:text-2xl text-[#B084FF] pr-1"></i>
               {serv.name}
             </div>
           ))}
@@ -39,9 +39,9 @@ function Services() {
               key={serv.id}
               className="flex items-center gap-5 rounded-lg bg-[#3c3939] w-full lg:w-[25rem] h-[7rem] justify-start px-5"
             >
-              <div class="container">
-                <div class="grid-pattern flex items-center justify-center">
-                  <i class={`${serv.img} text-3xl `}></i>
+              <div className="container">
+                <div className="grid-pattern flex items-center justify-center">
+                  <i className={`${serv.img} text-3xl `}></i>
                 </div>
               </div>
               <div className="flex flex-col justify-center items-start">

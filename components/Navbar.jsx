@@ -10,10 +10,10 @@ const Navbar = () => {
     <nav className="w-full text-[#616161] flex justify-between px-5 lg:px-20 max-w-[100rem] py-6 items-center navbar">
       <div className="flex items-center gap-5 justify-center">
         <Link href="https://github.com/unravyl/" target="_blank">
-          <i class="bx bxl-github text-[2rem]"></i>
+          <i className="bx bxl-github text-[2rem]"></i>
         </Link>
         <Link href="https://www.linkedin.com/company/unravyl/" target="_blank">
-          <i class="bx bxl-linkedin-square text-[2rem]"></i>
+          <i className="bx bxl-linkedin-square text-[2rem]"></i>
         </Link>
       </div>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
