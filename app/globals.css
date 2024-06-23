@@ -87,7 +87,7 @@ canvas {
 }
 
 .navbar {
-  @apply px-10;
+  @apply px-5;
 }
 
 .profileCircle {

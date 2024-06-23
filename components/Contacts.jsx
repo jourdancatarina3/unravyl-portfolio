@@ -25,13 +25,13 @@ function Contacts() {
                 class="logo size-[4rem]"
               ></Image>
             </div>
-            <div class="status-badge ">
+            <div class="status-badge">
               <div class="dot"></div>
               <div class="text">Available for work</div>
             </div>
           </div>
-          <div className="flex gap-4 items-center mt-7 justify-start flex-row mb-[2rem]">
-            <div className="flex pt-[1rem] items-start w-[55%] justify-center flex-col">
+          <div className="flex gap-4 items-center mt-7 justify-start flex-col lg:flex-row mb-[2rem]">
+            <div className="flex pt-[1rem] items-start lg:w-[55%] justify-center flex-col">
               {" "}
               <p className="text-white font-bold mb-4">
                 Drop us a line or say on social networks
@@ -42,8 +42,8 @@ function Contacts() {
                 software application, we&apos;d love to talk about your project
               </p>
             </div>
-            <div className="flex h-full mt-[-2rem] items-start justify-start gap-4 flex-col">
-              <div className="flex  items-center gap-3 justify-start">
+            <div className="flex h-full lg:mt-[-2rem] items-center lg:items-start justify-start gap-4 flex-col">
+              <div className="flex items-center gap-3 justify-start">
                 <Link href="https://github.com/unravyl/" target="_blank">
                   <i class="bx bxl-github text-[2rem]"></i>
                 </Link>

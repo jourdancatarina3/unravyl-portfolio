@@ -19,16 +19,16 @@ function Services() {
               key={serv.id}
               className="box-sizing flex items-center justify-center px-5"
             >
-              <i class="bx bx-check text-2xl text-[#B084FF] pr-1"></i>
+              <i class="bx bx-check text-xl lg:text-2xl text-[#B084FF] pr-1"></i>
               {serv.name}
             </div>
           ))}
         </div>
-        <div className="flex items-center flex-col justify-center mt-[5rem]">
-          <h1 className="text-white font-bold text-2xl">
+        <div className="flex items-center flex-col justify-center mt-[5rem] px-4 lg:px-0">
+          <h1 className="text-white font-bold text-xl text-center lg:text-2xl">
             Product, Website or Mobile Application, we&apos;ve got you covered!
           </h1>
-          <h2 className="text-xl text-gray-400 max-w-[40rem] text-center">
+          <h2 className="lg:text-xl text-gray-400 max-w-[40rem] text-center">
             Let&apos;s elevate your vision and achieve your design goals
             together!
           </h2>

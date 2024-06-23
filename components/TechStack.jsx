@@ -24,7 +24,7 @@ function TechStack() {
           Creating websites that make a real impact fit to your needs
         </h2>
       </div>
-      <div className="mt-[5rem] grid grid-cols-4 lg:grid-cols-6 gap-[3rem] w-[100%] lg:w-[60%] md:gap-[5rem] items-center  justify-center">
+      <div className="mt-[5rem] grid grid-cols-4 lg:grid-cols-6 gap-[3rem] w-[100%] px-4 lg:px-0 lg:w-[60%] md:gap-[5rem] items-center  justify-center">
         {stacks.map((stack, index) => (
           <div key={stack.id} className="relative flex flex-col items-center ">
             <Image

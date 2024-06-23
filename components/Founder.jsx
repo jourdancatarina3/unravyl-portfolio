@@ -42,11 +42,11 @@ function Founder() {
     >
       <div class="backgrounds z-0 absolute top-[5rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
       <h1 className="text-6xl lg:text-[5rem] font-black header">FOUNDER</h1>
-      <div className="grid grid-cols-2 mt-[3rem] gap-10 w-full px-[12rem]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 mt-[3rem] gap-10 w-full lg:px-[12rem]">
         {founders.map((founder, index) => (
           <div
             key={index}
-            className="bg-[#292835] cards rounded-xl h-[40rem] relative flex flex-col items-center "
+            className="bg-[#292835] cards rounded-xl lg:h-[40rem] relative flex flex-col items-center "
           >
             <Image
               src="/Union.svg"
@@ -62,23 +62,25 @@ function Founder() {
               width={1340}
               className="size-[7rem] rounded-full mt-[4rem]"
             ></Image>
-            <h1 className="text-white text-4xl font-medium mt-[2rem]">
+            <h1 className="text-white text-3xl lg:text-4xl font-medium mt-[2rem]">
               {founder.name}
             </h1>
-            <h2 className="text-gray-400 text-xl mt-[0.5rem]">
+            <h2 className="text-gray-400 text-lg lg:text-xl lg:mt-[0.5rem]">
               {founder.title}
             </h2>
-            <p className="mt-[3rem] text-lg text-justify max-w-[85%] z-[40]">
+            <p className="mt-4 lg:mt-[3rem] lg:text-lg text-justify max-w-[85%] z-[40]">
               {founder.description}
             </p>
+            <div className="pt-4 lg:pt-0" />
             <Link
               href={founder.link}
               target="_blank"
-              className="absolute bottom-10 contactButton "
+              className="lg:absolute bottom-10 contactButton"
             >
               {" "}
               Visit Profile{" "}
             </Link>
+            <div className="pb-4 lg:pb-0" />
           </div>
         ))}
       </div>
