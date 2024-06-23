@@ -4,39 +4,43 @@ import Link from "next/link";
 
 function Hero() {
   return (
-    <section className="w-full flex flex-col h-[35rem] lg:h-[50rem] items-center justify-start relative">
-      <h1 className="text-4xl font-black mb-8">UNRAVYL</h1>
-      <div className="profileCircle lg:z-0 z-20 rounded-full flex items-center justify-center">
-        <Image
-          alt="bgProfile"
-          src="/logo.png"
-          height={1240}
-          width={1240}
-          className="size-[5rem]"
-        ></Image>
-      </div>
-      <div className="flex flex-col mt-[4rem] items-center justify-center">
-        <h1 className="font-black text-5xl lg:text-8xl text-center">FREELANCE <br/> WEB <br /> DEVELOPERS </h1>
-        <div class="backgrounds md:hidden z-0 absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-50 items-center justify-center"></div>
-      </div>
-      <div className="hidden md:block w-full absolute top-0 right-0">
-        <Image
-          src="/bg.png"
-          alt="bg"
-          height={21240}
-          width={21240}
-          className="w-full opacity-20 z-10 no-drag"
-        ></Image>
-        <div class="backgrounds z-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
-      </div>{" "}
-      <Link
-        href="https://www.linkedin.com/company/unravyl"
-        target="_blank"
-        className="w-[11rem] py-2 absolute flex hover:scale-105 transition items-center text-lg justify-center bottom-[3.5rem] lg:bottom-[10rem] rounded-xl text-white bg-[#83828A]"
-      >
-        Avail Services <i class="bx bx-right-arrow-alt text-white text-xl"></i>
-      </Link>
-    </section>
+    <div className="h-lvh w-screen flex justify-center items-center">
+      <section className="w-full flex flex-col gap-10 h-[35rem] lg:h-[50rem] items-center justify-start relative">
+        <h1 className="text-4xl font-black">UNRAVYL</h1>
+        <div className="profileCircle lg:z-0 z-20 rounded-full flex items-center justify-center">
+          <Image
+            alt="bgProfile"
+            src="/logo.png"
+            height={1240}
+            width={1240}
+            className="size-[5rem]"
+          ></Image>
+        </div>
+        <div className="flex flex-col items-center justify-center">
+          <h1 className="font-black text-5xl lg:text-8xl text-center">
+            FREELANCE <br /> WEB <br /> DEVELOPERS{" "}
+          </h1>
+          <div class="backgrounds md:hidden z-0 absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-50 items-center justify-center"></div>
+        </div>
+        <div className="hidden md:block w-full absolute top-0 right-0">
+          <Image
+            src="/bg.png"
+            alt="bg"
+            height={21240}
+            width={21240}
+            className="w-full opacity-20 z-10 no-drag"
+          ></Image>
+          <div class="backgrounds z-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
+        </div>{" "}
+        <Link
+          href="https://www.linkedin.com/company/unravyl"
+          target="_blank"
+          className="cursor-pointer rounded-md border border-purple-400 px-5 py-3 bg-gradient-to-r from-violet-700 to-purple-500 text-white drop-shadow-lg text-xl hover:from-violet-600 hover:to-purple-400 hover:border-purple-300 transition-colors transition-border duration-300"
+        >
+          Avail Services
+        </Link>
+      </section>
+    </div>
   );
 }
 
