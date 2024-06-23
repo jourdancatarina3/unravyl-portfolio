@@ -1,11 +1,25 @@
 "use client";
 import React, { useState } from "react";
-import { div } from "three/examples/jsm/nodes/Nodes.js";
+import {gsap} from "gsap";
+import { useGSAP } from '@gsap/react';
+import { animateWithGsap } from '@/utils/animations';
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
 import { stacks } from "../constants";
 
+gsap.registerPlugin(ScrollTrigger);
+
 function TechStack() {
   const [projectHovered, setProjectHovered] = useState(null);
+
+  useGSAP(()=> {
+    animateWithGsap(
+      '#stack',
+      {y:0, opacity: 1,ease: 'power2.inOut' ,stagger:0.1}
+    )
+  },[])
+
+  
   const handleHover = (index) => {
     setProjectHovered(index);
   };
@@ -26,7 +40,7 @@ function TechStack() {
       </div>
       <div className="mt-[5rem] grid grid-cols-4 lg:grid-cols-6 gap-[3rem] w-[100%] px-4 lg:px-0 lg:w-[60%] md:gap-[5rem] items-center justify-center">
         {stacks.map((stack, index) => (
-          <div key={stack.id} className="relative flex flex-col items-center ">
+          <div key={stack.id} id="stack" className="relative opacity-0 flex flex-col items-center ">
             <Image
               src={stack.source}
               alt={stack.id}
