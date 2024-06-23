@@ -134,7 +134,7 @@ export const founders = [
     name: "Jed Edison",
     title: "CEO & Co-founder",
     description:
-      "I am a Front-end pervert versatile fullstack software developer with a keen eye for detail, specializing in creating comprehensive and scalable solutions. I excel in testing, crafting intuitive mockups for designs, and developing engaging animations, ensuring each project not only functions flawlessly but also provides an exceptional user experience.",
+      "A versatile fullstack software developer with a keen eye for detail, specializing in creating comprehensive and scalable solutions. I excel in testing, crafting intuitive mockups for designs, and developing engaging animations, ensuring each project not only functions flawlessly but also provides an exceptional user experience.",
     img: "/jed.jpg",
     link: "https://jed-donaire.vercel.app/",
   },
