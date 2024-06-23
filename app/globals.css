@@ -101,7 +101,7 @@ canvas {
     rgba(131, 130, 138, 0.2) 0%,
     rgba(131, 130, 138, 0) 100%
   );
-  transform: matrix(1, 0, 0, -1, 0, 0);
+  /* transform: matrix(1, 0, 0, -1, 0, 0); */
 }
 
 /* Ellipse 3 */
