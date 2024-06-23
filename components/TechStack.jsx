@@ -16,7 +16,7 @@ function TechStack() {
   return (
     <section className="flex items-center justify-center flex-col">
       <div className="flex flex-col items-center justify-center gap-5 px-8">
-        <h1 className="text-lg font-bold lg:text-4xl text-center">
+        <h1 className="text-2xl font-bold lg:text-4xl text-center">
           Over the years, we&apos;ve empowered companies and streamline services
           for the world
         </h1>
@@ -24,7 +24,7 @@ function TechStack() {
           Creating websites that make a real impact fit to your needs
         </h2>
       </div>
-      <div className="mt-[5rem] grid grid-cols-4 lg:grid-cols-6 gap-[3rem] w-[100%] px-4 lg:px-0 lg:w-[60%] md:gap-[5rem] items-center  justify-center">
+      <div className="mt-[5rem] grid grid-cols-4 lg:grid-cols-6 gap-[3rem] w-[100%] px-4 lg:px-0 lg:w-[60%] md:gap-[5rem] items-center justify-center">
         {stacks.map((stack, index) => (
           <div key={stack.id} className="relative flex flex-col items-center ">
             <Image

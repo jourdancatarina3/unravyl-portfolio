@@ -35,7 +35,7 @@ function Hero() {
         <Link
           href="https://www.linkedin.com/company/unravyl"
           target="_blank"
-          className="cursor-pointer rounded-md border border-purple-400 px-5 py-3 bg-gradient-to-r from-violet-700 to-purple-500 text-white drop-shadow-lg text-xl hover:from-violet-600 hover:to-purple-400 hover:border-purple-300 transition-colors transition-border duration-300"
+          className="select-none cursor-pointer rounded-md border border-purple-400 px-5 py-3 bg-gradient-to-r from-violet-700 to-purple-500 text-white drop-shadow-lg text-xl hover:from-violet-600 hover:to-purple-400 hover:border-purple-300 transition-colors transition-border duration-300"
         >
           Avail Services
         </Link>
