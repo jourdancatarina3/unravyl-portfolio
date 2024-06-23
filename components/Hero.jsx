@@ -25,7 +25,7 @@ function Hero() {
           alt="bg"
           height={21240}
           width={21240}
-          className="w-full opacity-35 z-10"
+          className="w-full opacity-20 z-10 no-drag"
         ></Image>
         <div class="backgrounds z-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
       </div>{" "}
