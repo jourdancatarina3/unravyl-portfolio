@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import ProfileSlider from "@/components/ProfileSlider";
 
@@ -22,12 +23,12 @@ function AboutUs() {
             presence and drive business growth, ensuring each project exceeds
             expectations through precision and innovation.
           </p>
-          <a
+          <Link
             href="#founder"
-            className="w-[10rem] py-2 flex items-center text-lg justify-center rounded-xl text-white bg-[#83828A]"
+            className="flex items-center gap-1 select-none cursor-pointer rounded-md border border-purple-400 px-5 py-3 bg-gradient-to-r from-violet-700 to-purple-500 text-white drop-shadow-lg text-xl hover:from-violet-600 hover:to-purple-400 hover:border-purple-300 transition-colors transition-border duration-300"
           >
             Know More <i class="bx bx-right-arrow-alt text-white text-xl"></i>
-          </a>
+          </Link>
         </div>
         <div className="w-[100%] lg:w-[60%] h-[40rem]">
           <ProfileSlider />
