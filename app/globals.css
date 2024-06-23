@@ -158,7 +158,7 @@ canvas {
 }
 
 .image {
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
   z-index: 1;
   position: relative;
 }
@@ -178,7 +178,7 @@ canvas {
 }
 
 .image-container:hover .image {
-  transform: scale(1.2); /* Adjust the scale value as needed */
+  transform: scale(1.1); /* Adjust the scale value as needed */
 }
 
 .image-container:hover::before {
@@ -191,8 +191,7 @@ canvas {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  background-color: #ffffff;
-  color: #000000;
+  color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;

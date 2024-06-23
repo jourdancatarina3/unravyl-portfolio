@@ -4,6 +4,8 @@ import React, { useEffect } from "react";
 import { projects } from "../constants";
 import Image from "next/image";
 import Link from "next/link";
+import Icon from "@mdi/react";
+import { mdiOpenInNew } from "@mdi/js";
 
 function AboutUs() {
   useEffect(() => {
@@ -41,45 +43,33 @@ function AboutUs() {
       className="flex items-center relative justify-center flex-col mt-[5rem]"
     >
       <div class="backgrounds z-0 absolute top-[5rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
-      <h1 className="text-6xl lg:text-[5rem] font-black header">PROJECTS</h1>
-      <div className="flex items-center flex-col lg:flex-row gap-5 lg:w-3/4 mt-[5rem] justify-center">
-        {projects.map((proj) => (
+      <h1 className="text-6xl lg:text-[5rem] font-black header mb-10">
+        PROJECTS
+      </h1>
+      <div className="flex flex-wrap gap-5 px-3 justify-center">
+        {projects.map((project) => (
           <div
-            key={proj.name}
-            className="bg-[#554E4E] portfolios w-full lg:w-1/2 rounded-xl flex items-center flex-col justify-center"
+            key={project.id}
+            className="rounded-md flex flex-col gap-5 bg-gray-800/50 max-w-[400px] min-w-[350px] p-3 shadow-xl"
           >
-            <div className="image-container rounded-t-xl flex items-center mt-[0.7rem] justify-center">
+            <Link
+              href={project.link}
+              target="_blank"
+              className="relative w-full pb-[100%] rounded-md overflow-hidden"
+            >
               <Image
-                src={proj.img}
-                alt={proj.name}
-                height={1450}
-                width={1450}
-                className="image w-full h-[30rem]"
-              ></Image>
-              <Link
-                href={proj.link}
-                target="_blank"
-                className="hover-button font-medium bg-[#83828A]"
-              >
-                Go to Page
-              </Link>
-            </div>
-
-            <div className="flex items-center lg:pl-5 py-5 justify-start">
-              <Image
-                src={proj.logo}
-                alt={proj.name}
-                height={1450}
-                width={1450}
-                className="size-[4rem] "
-              ></Image>
-              <div className="pl-2 flex flex-col items-start  justify-center ">
-                <h1 className="text-white text-xl font-bold">{proj.name}</h1>
-                <h2 className="max-w-[30rem] text-gray-200">
-                  {proj.description}
-                </h2>
+                src={project.img}
+                alt={project.name}
+                fill
+                className="object-cover hover:scale-110 hover:brightness-75 transition duration-300"
+              />
+              <div className="w-full h-full bg-black/40 cursor-pointer flex justify-center items-center absolute opacity-0 hover:opacity-100 transition duration-300">
+                <Icon path={mdiOpenInNew} size={2} />
               </div>
-            </div>
+              <div className="relative"></div>
+            </Link>
+            <h1 className="text-2xl font-bold">{project.name}</h1>
+            <p className="text-gray-400">{project.description}</p>
           </div>
         ))}
       </div>

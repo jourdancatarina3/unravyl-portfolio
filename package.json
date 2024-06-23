@@ -11,6 +11,8 @@
   "dependencies": {
     "@headlessui/react": "^2.0.4",
     "@heroicons/react": "^1.0.6",
+    "@mdi/js": "^7.4.47",
+    "@mdi/react": "^1.6.1",
     "@pmndrs/assets": "^1.6.0",
     "@pmndrs/branding": "^0.0.8",
     "@react-three/drei": "^9.107.0",
