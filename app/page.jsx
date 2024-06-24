@@ -10,7 +10,7 @@ import Contacts from "@/components/Contacts";
 
 export default function Home() {
   return (
-    <div className="flex justify-center px-3 lg:px-0">
+    <div className="flex justify-center px-3 lg:px-0 overflow-hidden">
       <main className="flex items-center justify-center flex-col w-full">
         <Navbar />
         <Hero />
