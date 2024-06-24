@@ -44,7 +44,7 @@ function AboutUs() {
             Know More <i className="bx bx-right-arrow-alt text-white text-xl"></i>
           </Link>
         </div>
-        <div className="w-[100%] lg:w-[60%] h-[40rem]">
+        <div className="w-[100%] lg:w-[60%] h-[20rem] sm:h-[30rem] md:h-[35rem]">
           <ProfileSlider />
         </div>
       </div>
