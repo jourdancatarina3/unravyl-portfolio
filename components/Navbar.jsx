@@ -7,7 +7,7 @@ import Link from "next/link";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <nav className="w-full text-[#616161] flex justify-between px-5 lg:px-20 max-w-[100rem] py-6 items-center navbar">
+    <nav className="w-full text-[#616161] flex justify-between px-5 lg:px-20 max-w-[100rem] py-6 items-center navbar z-50">
       <div className="flex items-center gap-5 justify-center">
         <Link href="https://github.com/unravyl/" target="_blank">
           <i className="bx bxl-github text-[2rem]"></i>
