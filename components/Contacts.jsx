@@ -1,9 +1,36 @@
+'use client'
 import React from "react";
 import { projects } from "../constants";
 import Image from "next/image";
 import Link from "next/link";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { animateWithGsap } from "@/utils/animations";
 
 function Contacts() {
+  useGSAP(()=> {
+    animateWithGsap('#contacts1', {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      ease: 'power2.inOut'
+    })
+    animateWithGsap('#contacts2', {
+      opacity: 1,
+      y: -5,
+      delay:0.5,
+      stagger: 0.2,
+      duration: 1,
+      ease: 'power2.inOut'
+    })
+    animateWithGsap('#contacts3', {
+      opacity: 1,
+      y: 0,
+      delay:1,
+      duration: 1,
+      ease: 'power2.inOut'
+    })
+  }, [])
   return (
     <section
       id="contacts"
@@ -11,27 +38,28 @@ function Contacts() {
     >
       <div className="backgrounds z-0 absolute top-[5rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
       <h1 className="text-6xl lg:text-[5rem] font-black header mb-[5rem]">CONTACTS</h1>
-      <div className="containerGlow relative">
-        <i className="bx bx-network-chart text-[#7b2ff7] text-[20rem] absolute top-[-7.5rem] lg:top-[-8rem] right-[-10rem] lg:right-[-8rem] z-[20]"></i>
+      <div id="contacts1" className="containerGlow opacity-0 relative">
+        <i id="contacts2" className="bx opacity-0 bx-network-chart text-[#7b2ff7] text-[20rem] absolute top-[-7.5rem] lg:top-[-8rem] right-[-10rem] lg:right-[-8rem] z-[20]"></i>
         <div className="glow"></div>
         <div className="inner-container">
           <div className="flex items-center gap-5 justify-start">
             <div className="circle-container">
               <Image
+                id="contacts2"
                 src="/logo.png"
                 alt="Logo"
                 height={2490}
                 width={2404}
-                className="logo size-[4rem]"
+                className="logo opacity-0 size-[4rem]"
               ></Image>
             </div>
-            <div className="status-badge">
+            <div id="contacts2" className="status-badge opacity-0">
               <div className="dot"></div>
               <div className="text-sm">Available for work</div>
             </div>
           </div>
           <div className="flex gap-4 items-center mt-7 justify-start flex-col lg:flex-row mb-[2rem]">
-            <div className="flex pt-[1rem] items-start lg:w-[55%] justify-center flex-col">
+            <div id="contacts3" className="flex pt-[1rem] opacity-0 items-start lg:w-[55%] justify-center flex-col">
               {" "}
               <p className="text-white font-bold mb-4">
                 Drop us a line or say on social networks
@@ -42,7 +70,7 @@ function Contacts() {
                 software application, we&apos;d love to talk about your project
               </p>
             </div>
-            <div className="flex h-full lg:mt-[-2rem] items-center lg:items-start justify-start gap-4 flex-col">
+            <div id="contacts2" className="flex opacity-0 h-full lg:mt-[-2rem] items-center lg:items-start justify-start gap-4 flex-col">
               <div className="flex items-center gap-3 justify-start">
                 <Link href="https://github.com/unravyl/" target="_blank">
                   <i className="bx bxl-github text-[2rem]"></i>
