@@ -39,6 +39,7 @@ function Contacts() {
       <div className="backgrounds z-0 absolute top-[5rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex opacity-65 items-center justify-center"></div>
       <h1 className="text-6xl lg:text-[5rem] font-black header mb-[5rem]">CONTACTS</h1>
       <div id="contacts1" className="containerGlow opacity-0 relative">
+        <div className="p-[20px] bg-[#1c1c1c]">
         <i id="contacts2" className="bx opacity-0 bx-network-chart text-[#7b2ff7] text-[20rem] absolute top-[-7.5rem] lg:top-[-8rem] right-[-10rem] lg:right-[-8rem] z-[20]"></i>
         <div className="glow"></div>
         <div className="inner-container">
@@ -91,6 +92,7 @@ function Contacts() {
               </Link>
             </div>
           </div>
+        </div>
         </div>
       </div>
 

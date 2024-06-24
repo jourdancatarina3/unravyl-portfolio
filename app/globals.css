@@ -300,7 +300,6 @@ canvas {
 .containerGlow {
   width: 100%;
   max-width: 800px; /* Adjust as needed */
-  padding: 20px; /* Adjust as needed */
   background: #1c1c1c; /* Dark background color */
   border-radius: 20px; /* Rounded corners */
   position: relative;
