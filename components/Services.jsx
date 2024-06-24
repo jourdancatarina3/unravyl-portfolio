@@ -1,10 +1,40 @@
+'use client'
 import React from "react";
 
 import { services, servicesInfo } from "../constants";
+import { useGSAP } from "@gsap/react";
 import Image from "next/image";
 import Link from "next/link";
+import gsap from "gsap";
 
 function Services() {
+  useGSAP(()=> {
+    gsap.to('#headingServices', {
+      scrollTrigger: {
+        trigger: '#headingServices',
+        start: '20% bottom'
+      },
+      stagger: 0.15,
+      opacity: 1,
+      y: 20, 
+      borderRadius: 30})
+  
+      gsap.fromTo('#subServices', {
+        opacity: 0,
+        x: 100, 
+        borderRadius: 30
+      }, {
+          scrollTrigger: {
+            trigger: '#subServices',
+            start: '20% bottom'
+          },
+          stagger: 0.15,
+          opacity: 1,
+          x: 0,
+          ease: 'power2.inOut',
+          duration: 1
+        })
+  }, [])
   return (
     <section
       id="services"
@@ -16,6 +46,7 @@ function Services() {
         <div className="flex items-center flex-wrap gap-2 mt-[4rem] justify-center">
           {services.map((serv) => (
             <div
+            id="headingServices"
               key={serv.id}
               className="box-sizing flex items-center justify-center px-5"
             >
@@ -36,6 +67,7 @@ function Services() {
         <div className="flex flex-col items-center gap-4 mt-[4rem] justify-center">
           {servicesInfo.map((serv) => (
             <div
+            id="subServices"
               key={serv.id}
               className="flex items-center gap-5 rounded-lg bg-[#3c3939] w-full lg:w-[25rem] h-[7rem] justify-start px-5"
             >
