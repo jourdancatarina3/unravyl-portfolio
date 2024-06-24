@@ -218,7 +218,6 @@ canvas {
     0px 4px 20px -1px rgba(0, 0, 0, 0.25);
   -webkit-backdrop-filter: blur(20px); /* Add this line for Safari support */
   /* Note: backdrop-filter has minimal browser support */
-  border-radius: 30px;
 }
 
 /* For better compatibility with older browsers, you can add more prefixes */
@@ -236,7 +235,6 @@ canvas {
   -moz-backdrop-filter: blur(20px); /* For Firefox */
   -o-backdrop-filter: blur(20px); /* For Opera */
   -ms-backdrop-filter: blur(20px); /* For IE */
-  border-radius: 30px;
 }
 .container {
   width: 60px; /* Adjust as needed */
@@ -309,6 +307,10 @@ canvas {
   overflow: hidden;
   box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.5), 0 0 20px rgba(0, 0, 255, 0.5); /* Outer shadow */
   margin: 20px auto; /* Center the container */
+}
+
+#contacts1 {
+  transform: translateX(-20px);
 }
 
 .container::before {
