@@ -117,13 +117,13 @@ canvas {
 
   background: linear-gradient(
       270.51deg,
-      rgba(255, 156, 84, 0.4) 35.86%,
+      #4f2858 35.86%,
       rgba(255, 255, 255, 0.216033) 52.65%,
       rgba(0, 0, 0, 0) 72.38%
     ),
     radial-gradient(
         69.09% 95.18% at 42.78% 42.58%,
-        #621abe 0%,
+        #461e7c 0%,
         rgba(36, 33, 75, 0) 100%
       )
       /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
@@ -298,14 +298,17 @@ canvas {
 }
 
 .containerGlow {
-  width: 100%;
-  max-width: 800px; /* Adjust as needed */
+  width: 100%; /* Adjust as needed */
   background: #1c1c1c; /* Dark background color */
-  border-radius: 20px; /* Rounded corners */
   position: relative;
   overflow: hidden;
   box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.5), 0 0 20px rgba(0, 0, 255, 0.5); /* Outer shadow */
   margin: 20px auto; /* Center the container */
+}
+
+.glowingEffect {
+  overflow: hidden;
+  box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.5), 0 0 20px rgba(0, 0, 255, 0.5);
 }
 
 #contacts1 {
@@ -334,7 +337,7 @@ canvas {
 
   position: relative;
   z-index: 1;
-  @apply px-4 py-1;
+  @apply px-8 lg:px-16 py-1;
 }
 
 .glow {
@@ -351,8 +354,8 @@ canvas {
 
 .contactButton {
   display: inline-block;
-  padding: 14px 20px; /* Adjust padding as needed */
-  font-size: 16px; /* Adjust font size as needed */
+  padding: 8px 15px; /* Adjust padding as needed */
+  font-size: 14px; /* Adjust font size as needed */
   font-weight: bold;
   color: #ffffff;
   background: linear-gradient(
@@ -478,4 +481,17 @@ canvas {
 
 .status-badge .text {
   z-index: 2;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-infinite {
+  animation: rotate 5s linear infinite;
 }

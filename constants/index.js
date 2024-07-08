@@ -126,7 +126,7 @@ export const founders = [
     name: "Jourdan Catarina",
     title: "CEO & Co-founder",
     description:
-      "A full stack developer with expertise in web and application development. Skilled in creating seamless, user-centric digital experiences across various platforms. Passionate about leveraging cutting-edge technologies to deliver innovative solutions that drive business growth and enhance user engagement.",
+      "A full stack developer with expertise in web and application development. Skilled in creating seamless, user-centric digital experiences.",
     img: "/jourdan.png",
     link: "https://jourdancatarina.vercel.app/",
   },
@@ -134,9 +134,9 @@ export const founders = [
     name: "Jed Edison",
     title: "CEO & Co-founder",
     description:
-      "A versatile fullstack software developer with a keen eye for detail, specializing in creating comprehensive and scalable solutions. I excel in testing, crafting intuitive mockups for designs, and developing engaging animations, ensuring each project not only functions flawlessly but also provides an exceptional user experience.",
+      "A versatile fullstack software developer with a keen eye for detail, Software Developer at Bitworks Solutions and Scalema.",
     img: "/jed.jpg",
-    link: "https://jed-donaire.vercel.app/",
+    link: "https://jed-edison.com/",
   },
 ];
 

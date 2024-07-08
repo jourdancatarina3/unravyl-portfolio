@@ -46,7 +46,7 @@ function AboutUs() {
       <h1 className="text-6xl lg:text-[5rem] font-black header mb-10">
         PROJECTS
       </h1>
-      <div className="flex flex-wrap gap-5 px-3 justify-center">
+      <div className="flex flex-wrap gap-5 mt-10 px-3 justify-center">
         {projects.map((project) => (
           <div
             key={project.id}
