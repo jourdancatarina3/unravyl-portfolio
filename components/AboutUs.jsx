@@ -35,7 +35,7 @@ function AboutUs() {
             From Saas to Website & Mobile Application
           </h1>
           <p className="lg:text-xl text-gray-400  max-w-[40rem]  text-center">
-            At Innovus, we specialize in developing cutting-edge software
+            At Unravyl, we specialize in developing cutting-edge software
             applications for websites and mobile platforms. Our expert team
             delivers bespoke, user-friendly solutions that enhance online
             presence and drive business growth, ensuring each project exceeds
