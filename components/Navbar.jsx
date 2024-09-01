@@ -40,7 +40,7 @@ const Navbar = () => {
         id="navbar-header"
         className={` ${
           isSticky && " bg-[#1c1c1c] glowingEffect fixed"
-        } top-0 left-0 w-full text-[#616161] flex justify-between px-5 lg:px-20 max-w-[100rem] py-6 items-center navbar z-50`}
+        } top-0 left-0 w-full text-[#616161] flex justify-between px-5 lg:px-20 py-6 items-center navbar z-50`}
       >
         <div className="flex items-center gap-5 justify-center">
           <Link href="https://github.com/unravyl/" target="_blank">

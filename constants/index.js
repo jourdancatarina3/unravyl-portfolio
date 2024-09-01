@@ -111,14 +111,14 @@ export const founders = [
   {
     name: "Maxell Milay",
     title: "CEO & Co-founder",
-    description: "Fullstack devekoper, AI Developer, CHix boi Developing",
-    img: "/jed.jpg",
+    description: "I'm Maxell, an AI Engineer specializing in Machine Learning, and also a Full Stack Developer who finds immense joy and fulfillment in bringing ideas to life through code.",
+    img: "/maxell.jpg",
     link: "https://maxell-milay.vercel.app/",
   },
   {
     name: "Sheldon Arthur",
     title: "CEO & Co-founder",
-    description: "Fullstack developer, Professional Racist ",
+    description: "A seasoned fullstack developer with a strong emphasis on backend development. With a passion for AI, I continuously explore innovative ways, driving both efficiency and innovation.",
     img: "/sheldon.png",
     link: "https://sheldonsagrado.vercel.app/",
   },
